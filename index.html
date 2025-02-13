@@ -1,0 +1,68 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haiyat Animation</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right, #1e3c72, #2a5298);
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            overflow: hidden;
+        }
+
+        .name {
+            font-size: 8rem;
+            font-weight: bold;
+            background: -webkit-linear-gradient(#ff6b6b, #ffe66d);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: colorChange 5s infinite, moveUpDown 3s ease-in-out infinite;
+            text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        @keyframes colorChange {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        @keyframes moveUpDown {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .description {
+            margin-top: 30px;
+            color: #ffffff;
+            text-align: center;
+            font-size: 1.5rem;
+            max-width: 800px;
+            animation: fadeIn 3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <div class="name">Haiyat</div>
+        <div class="description">
+            এই অ্যানিমেশনটি আপনার নামকে একটি রঙিন এবং চলমান স্টাইলে প্রদর্শন করে। 
+            এটি HTML এবং CSS ব্যবহার করে তৈরি করা হয়েছে, যা বিভিন্ন রঙের পরিবর্তন করে এবং নামটি উপরে নিচে নড়াচড়া করে।
+        </div>
+    </div>
+
+</body>
+</html>
+```
